@@ -1855,7 +1855,7 @@ MSG
       end
 
       # Backport dup from 1.9 so that initialize_dup() gets called
-      unless Object.respond_to?(:initialize_dup)
+      unless Object.respond_to?(:initialize_dup, true)
         def dup # :nodoc:
           copy = super
           copy.initialize_dup(self)
