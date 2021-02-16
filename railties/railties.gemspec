@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency('rake',          '>= 0.8.7')
   s.add_dependency('thor',          '~> 0.14.6')
-  s.add_dependency('rack-ssl',      '~> 1.3.2')
+  s.add_dependency('rack-ssl',      '>= 1.4.0')
   s.add_dependency('rdoc',          '~> 3.4')
   s.add_dependency('activesupport', version)
   s.add_dependency('actionpack',    version)
